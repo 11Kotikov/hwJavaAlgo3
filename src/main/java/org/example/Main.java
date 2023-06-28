@@ -13,9 +13,14 @@ public class Main {
         list.add(17);
         list.add(18);
         list.add(12);
-        System.out.println(list.get(4));
         for (int i = 0; i<5; i++) {
             System.out.format("element " + i + " = " + list.get(i)+"\n");
         }
+        list.revert();
+        System.out.println("After revert: ");
+        for (int i = 0; i<5; i++) {
+            System.out.format("element " + i + " = " + list.get(i)+"\n");
+        }
+
     }
 }
